@@ -1,0 +1,63 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap-extend-mixins";
+@import "loader";
+#translation-app{
+	min-height: 500px;
+	i{
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.translation-filter{
+		position: relative;
+		input{
+			position: relative;
+			top: 2px;
+			left: 40px;
+		}
+		.glyphicon-search{
+			position: absolute;
+			right: -35px;
+			top: 12px;
+			color: #999999;
+		}
+		.glyphicon-remove{
+			position: absolute;
+			right: -20px;
+			top: 12px;
+			color: #999999;
+		}
+	}
+}
+
+.message-wrapper {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	.message {
+		display: none;
+		position: relative;
+		margin:  70px  auto 0;
+		padding: 20px 50px;
+		font-size: 14px;
+		line-height: 20px;
+		&.success{
+			border: 1px solid limegreen;
+		}
+		&.error{
+			border: 1px solid darkred;
+		}
+		width: 300px;
+		background: rgba(white, 0.8);
+		border-radius: 5px;
+	}
+}
+.translation-actions{
+	width: 61px;
+}
+
+.tab-pane .table-bordered{
+	border-top: none;
+}
