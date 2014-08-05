@@ -56,10 +56,4 @@ class ModuleController extends BackendController
         $this->render('test');
     }
 
-    private function renderJson($data){
-        header('Cache-Control: no-cache, must-revalidate');
-        header('Content-type: application/json');
-        echo CJavaScript::jsonEncode($data);
-        Yii::app()->end();
-    }
 }
